@@ -59,19 +59,24 @@
       </div>
     </div>
     <div class="container text-center">
-      <div class="row justify-content-xl-center">
-        <div class="col-12 col-sm-6 col-xl-3 text-sm-right form-group">
-          <input type="text" class="form-control"/>
-        </div>
-        <div class="col-12 col-sm-6 col-xl-3 text-sm-left form-group">
-          <button type="button" class="btn btn-primary form-control">
-            <i class="bi bi-eye"></i>
-            Visualizar
+      <div class="row justify-content-xl-center d-sm-flex flex-wrap-reverse">
+
+        <div class="col-12 col-sm-6 col-xl-3 text-sm-left">
+          <button onclick="decrementar()" type="button" class="btn btn-danger form-control">
+            <i class="bi bi-dash-circle-fill"></i>
+            1
           </button>
         </div>
-      </div>
-    </div>
+        <div class="col-12 col-sm-6 col-xl-3 text-sm-right">
+          <button onclick="incrementar()" type="button" class="btn btn-success form-control">
+            <i class="bi bi-plus-circle-fill"></i>
+            1
+          </button>
+        </div>
 
+      </div>
+      <h1 class="display-1 font-weight-bold pt-3" id="contador">0</h1>
+    </div>
   </main>
   <footer class="bg-light text-secondary font-italic text-center pb-2">
     Copyright &copy; Sayonara Crestani - 2022
@@ -81,8 +86,8 @@
   <script src="node_modules/popper.js/dist/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/counter.js"></script>
+
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -91,7 +96,6 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script src="js/seletor-cor.js"></script>
 
 </body>
 

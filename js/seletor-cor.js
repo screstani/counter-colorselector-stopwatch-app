@@ -8,6 +8,6 @@ botao.addEventListener('click', function() {
   body.style.backgroundColor = selectedColor;
 
   if(body.style.backgroundColor !== selectedColor) {
-    alert("Please, use the CSS colors!")
+    alert("Please, use the CSS colors!");
   }
 });

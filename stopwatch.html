@@ -59,19 +59,30 @@
       </div>
     </div>
     <div class="container text-center">
-      <div class="row justify-content-xl-center">
-        <div class="col-12 col-sm-6 col-xl-3 text-sm-right form-group">
-          <input type="text" class="form-control"/>
+      <div class="row justify-content-xl-center d-sm-flex flex-wrap-reverse">
+
+        <div class="col-12 col-sm-4 col-xl-3">
+          <button type="button" class="btn btn-success form-control" id="startTimer">
+            <i class="bi bi-play-circle-fill"></i>
+            Start
+          </button>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 text-sm-left form-group">
-          <button type="button" class="btn btn-primary form-control">
-            <i class="bi bi-eye"></i>
-            Visualizar
+        <div class="col-12 col-sm-4 col-xl-3">
+          <button type="button" class="btn btn-danger form-control" id="pauseTimer">
+            <i class="bi bi-pause-circle-fill"></i>
+            Pause
+          </button>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-3">
+          <button  type="button" class="btn btn-primary form-control" id="resetTimer">
+            <i class="bi bi-stop-circle-fill"></i>
+            Reset
           </button>
         </div>
       </div>
+      <div><h1 class="timerDisplay Display-2 font-weight-bold pt-3">00 : 00 : 00: 000</h1>
+      </div>
     </div>
-
   </main>
   <footer class="bg-light text-secondary font-italic text-center pb-2">
     Copyright &copy; Sayonara Crestani - 2022
@@ -81,8 +92,7 @@
   <script src="node_modules/popper.js/dist/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/stopwatch.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
