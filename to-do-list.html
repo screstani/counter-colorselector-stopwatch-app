@@ -55,48 +55,13 @@
     <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
       <div class="container">
         <h1>To-Do List</h1>
-        <p class="lead">A list of errands and other tasks that one intends to accomplish.</p>
+        <p class="lead">The app manages a list of errands and other tasks that one intends to accomplish.</p>
       </div>
     </div>
 
-    <div class="container">
-      <p>
-        <label for="new-task">Add Item</label>
-        <input id="new-task" type="text">
-        <button>Add</button>
-      </p>
 
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox">
-          <label>Pay Bills</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-        </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <label>Go Shopping</label>
-          <input type="text" value="Go Shopping">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-        </li>
-      </ul>
 
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked="">
-          <label>See the Doctor</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-        </li>
-      </ul>
-    </div>
-
-    <section class="vh-100">
+    <!-- <section class="vh-100">
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col">
@@ -105,7 +70,6 @@
 
                 <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
                   <i class="fas fa-check-square me-1"></i>
-                  <u>My Todo-s</u>
                 </p>
 
                 <div class="pb-2">
@@ -124,21 +88,70 @@
                   </div>
                 </div>
 
+                <div class="container">
+
+                  <h3>Todo</h3>
+                  <ul id="incomplete-tasks" class="list-group rounded-0 bg-transparent">
+                    <li
+                      class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                        <div class="form-check">
+                          <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
+                            aria-label="..." checked />
+                        </div>
+                    </li>
+                    <li class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+                      <p class="lead fw-normal mb-0">Buy groceries for next week</p>
+                      <button class="edit">Edit</button>
+                      <button class="delete">Delete</button>
+                    </li>
+
+                    <li
+                    class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                    <div class="form-check">
+                      <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked2"
+                        aria-label="..." />
+                    </div>
+                  </li>
+                  <li
+                    class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+                    <p class="lead fw-normal mb-0">Renew car insurance</p>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                  </li>
+
+                  <li
+                    class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                    <div class="form-check">
+                      <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked3"
+                        aria-label="..." />
+                    </div>
+                  </li>
+                  <li
+                    class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+                    <p class="lead fw-normal mb-0">Sign up for online
+                      course</p>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                  </li>
+
+                  </ul>
+
+                  <h3>Completed</h3>
+                  <ul id="completed-tasks">
+                    <li>
+                      <input type="checkbox" checked="">
+                      <label>See the Doctor</label>
+                      <input type="text">
+                      <button class="edit">Edit</button>
+                      <button class="delete">Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
                 <hr class="my-4">
 
                 <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
-                  <p class="small mb-0 me-2 text-muted">Filter</p>
-                  <select class="select">
-                    <option value="1">All</option>
-                    <option value="2">Completed</option>
-                    <option value="3">Active</option>
-                    <option value="4">Has due date</option>
-                  </select>
-                  <p class="small mb-0 ms-4 me-2 text-muted">Sort</p>
-                  <select class="select">
-                    <option value="1">Added date</option>
-                    <option value="2">Due date</option>
-                  </select>
+
                   <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending"><i
                       class="fas fa-sort-amount-down-alt ms-2"></i></a>
                 </div>
@@ -164,7 +177,6 @@
                     </div>
                     <div class="text-end text-muted">
                       <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                        <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
                       </a>
                     </div>
                   </li>
@@ -182,15 +194,7 @@
                     <p class="lead fw-normal mb-0">Renew car insurance</p>
                   </li>
                   <li class="list-group-item px-3 py-1 d-flex align-items-center border-0 bg-transparent">
-                    <div
-                      class="py-2 px-3 me-2 border border-warning rounded-3 d-flex align-items-center bg-light">
-                      <p class="small mb-0">
-                        <a href="#!" data-mdb-toggle="tooltip" title="Due on date">
-                          <i class="fas fa-hourglass-half me-2 text-warning"></i>
-                        </a>
-                        28th Jun 2020
-                      </p>
-                    </div>
+
                   </li>
                   <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
                     <div class="d-flex flex-row justify-content-end mb-1">
@@ -199,11 +203,7 @@
                       <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
                           class="fas fa-trash-alt"></i></a>
                     </div>
-                    <div class="text-end text-muted">
-                      <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                        <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
-                      </a>
-                    </div>
+
                   </li>
                 </ul>
                 <ul class="list-group list-group-horizontal rounded-0 mb-2">
@@ -224,20 +224,74 @@
                       <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
                           class="fas fa-trash-alt"></i></a>
                     </div>
-                    <div class="text-end text-muted">
-                      <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                        <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
-                      </a>
-                    </div>
                   </li>
                 </ul>
+
+                <div class="container">
+                  <p>
+                    <label for="new-task">Add Item</label>
+                    <input id="new-task" type="text">
+                    <button>Add</button>
+                  </p>
+
+                  <h3>Todo</h3>
+                  <ul id="incomplete-tasks">
+                    <li>
+                      <input type="checkbox">
+                      <label>Pay Bills</label>
+                      <input type="text">
+                      <button class="edit">Edit</button>
+                      <button class="delete">Delete</button>
+                    </li>
+                    <li class="editMode">
+                      <input type="checkbox">
+                      <label>Go Shopping</label>
+                      <input type="text" value="Go Shopping">
+                      <button class="edit">Edit</button>
+                      <button class="delete">Delete</button>
+                    </li>
+                  </ul>
+
+                  <h3>Completed</h3>
+                  <ul id="completed-tasks">
+                    <li>
+                      <input type="checkbox" checked="">
+                      <label>See the Doctor</label>
+                      <input type="text">
+                      <button class="edit">Edit</button>
+                      <button class="delete">Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
 
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <div class="container text-center" id="lista">
+      <div class="row justify-content-xl-center">
+        <div class="col form-group">
+          <button
+            id="adicionar"
+            type="button" class="btn btn-success form-control"
+          >
+            <i class="bi bi-plus-circle-fill"></i>
+            Adicionar tarefa
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col d-flex">
+        <input type="checkbox" class="mr-2"/>
+        <input type="text" class="form-control" placeholder="Digite aqui a tarefa..."/>
+          <button type="button" class="btn btn-danger text-center">
+            <i class="bi bi-trash-fill"></i>
+          </button>
+        </div> -->
+      </div>
 
   </main>
   <footer class="bg-light text-secondary font-italic text-center pb-2">
@@ -249,7 +303,7 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/to-do-list.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -258,8 +312,6 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script src="js/to-do-list.js"></script>
-
 </body>
 
 </html>

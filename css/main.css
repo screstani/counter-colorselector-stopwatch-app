@@ -196,7 +196,7 @@ textarea {
   *,
   *::before,
   *::after {
-    background: #fff !important;
+    background: #fafafa !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
@@ -259,5 +259,9 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+}
+
+.btn.btn-warning {
+  color: white;
 }
 
