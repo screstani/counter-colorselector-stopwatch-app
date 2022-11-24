@@ -12,10 +12,18 @@ const myfunc = setInterval(function() {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
+
+  if(timeleft < 0) {
+    document.getElementById("days").innerHTML = 0;
+    document.getElementById("hours").innerHTML = 0;
+    document.getElementById("minutes").innerHTML = 0;
+    document.getElementById("seconds").innerHTML = 0;
+    document.getElementById("days").classList.add("text-white", "bg-success");
+    document.getElementById("hours").classList.add("text-white", "bg-success");
+    document.getElementById("minutes").classList.add("text-white", "bg-success");
+    document.getElementById("seconds").classList.add("text-white", "bg-success");
+    // adicionar as classes para deixar fundo verde e texto branco
+ }
 }, 1000);
 
-if
- (timeleft < 0) {
 
-  // adicionar as classes para deixar fundo verde e texto branco
- }
