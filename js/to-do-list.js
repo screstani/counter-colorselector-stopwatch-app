@@ -155,7 +155,7 @@ botaoAdicionar.addEventListener('click', function() {
   novaRow.innerHTML = `
     <div class="col d-flex">
       <input type="checkbox" class="mr-2"/>
-      <input type="text" class="form-control" placeholder="Digite aqui a tarefa..."/>
+      <input type="text" class="form-control" placeholder="Enter task here..."/>
       <button type="button" class="btn btn-danger text-center">
         <i class="bi bi-trash-fill"></i>
       </button>

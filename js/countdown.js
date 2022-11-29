@@ -18,6 +18,7 @@ const myfunc = setInterval(function() {
     document.getElementById("hours").innerHTML = 0;
     document.getElementById("minutes").innerHTML = 0;
     document.getElementById("seconds").innerHTML = 0;
+    document.getElementById("message").innerHTML = ("Happy New Year!!!");
     document.getElementById("days").classList.add("text-white", "bg-success");
     document.getElementById("hours").classList.add("text-white", "bg-success");
     document.getElementById("minutes").classList.add("text-white", "bg-success");
